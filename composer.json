@@ -1,0 +1,11 @@
+{
+  "name" : "MidiToHertz",
+  "version" : "0.1",
+  "require" : {
+    "tmont/midiparser" : "=1.1.0"
+  },
+  "repositories" : [ {
+    "type" : "composer",
+    "url" : "https://packagist.org/"
+  } ]
+}
