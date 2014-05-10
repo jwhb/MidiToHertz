@@ -12,8 +12,9 @@ class Tones
      * @param string $tones_file
      *            CSV-formatted file name to read the tone to frequency data from (optional)
      */
-    public function __construct($tones_file = 'tones.csv')
+    public function __construct($tones_file = '')
     {
+        if(strlen($tones_file) == 0) $tones_file = dirname(__FILE__) . '/tones.csv';
         $this->read_file($tones_file);
     }
 
